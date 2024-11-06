@@ -1,10 +1,53 @@
 {
+  "entryPagePath":"pages/index/index",
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/list/index",
+    "pages/cate/index",
+    "pages/profile/index",
+    "pages/cart/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationStyle": "custom"
+    "?navigationStyle": "custom",
+    "navigationBarTitleText": "袁代事的小程序",
+    "navigationBarBackgroundColor": "#1b9adc",
+    "enablePullDownRefresh": true,
+    "?backgroundColor": "#bababa",
+    "backgroundTextStyle":"dark"
+  },
+  "tabBar": {
+    "selectedColor": "#1b9adc",
+    "color": "#666",
+    "backgroundColor": "",
+    "borderStyle":"black",
+    "position": "bottom",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "/assets/shouye.png",
+        "selectedIconPath": "/assets/shouyeT.png"
+      },
+      {
+        "text": "分类",
+        "pagePath": "pages/cate/index",
+        "iconPath": "/assets/fenlei.png",
+        "selectedIconPath": "/assets/fenleiT.png"
+      },
+      {
+        "text": "购物车",
+        "pagePath": "pages/cart/index",
+        "iconPath": "/assets/gouwuche.png",
+        "selectedIconPath": "/assets/gouwucheT.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/profile/index",
+        "iconPath": "/assets/wode.png",
+        "selectedIconPath": "/assets/wodeT.png"
+      }
+    ]
   },
   "style": "v2",
   "?renderer": "skyline",
