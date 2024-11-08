@@ -1,0 +1,60 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollarea {
+  flex: 1;
+  overflow-y: hidden;
+}
+
+.swiper {
+
+  swiper {
+    height: 200px;
+
+    image {
+      width: 100%;
+      // height: 240px;
+    }
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15rpx;
+  font-size: 24rpx;
+  background-color: #ffffff;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
+  .list {
+    padding: 15rpx;
+    display: flex;
+    flex-direction: column;
+    font-size: 24rpx;
+    align-items: center;
+
+    image {
+      background-color: #ffffff;
+      padding: 10rpx;
+      border-radius: 20rpx;
+      width: 100rpx;
+      height: 80rpx;
+    }
+
+    text {
+      margin-top: 10rpx;
+    }
+  }
+}

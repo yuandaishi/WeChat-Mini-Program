@@ -1,11 +1,11 @@
 {
-  "entryPagePath":"pages/index/index",
+  "entryPagePath": "pages/index/index",
   "pages": [
     "pages/index/index",
-    "pages/list/index",
-    "pages/cate/index",
-    "pages/profile/index",
-    "pages/cart/index"
+    "pages/hl/index",
+    "pages/jzg/index",
+    "pages/padan/index",
+    "pages/list/list"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -14,38 +14,38 @@
     "navigationBarBackgroundColor": "#1b9adc",
     "enablePullDownRefresh": true,
     "?backgroundColor": "#bababa",
-    "backgroundTextStyle":"dark"
+    "backgroundTextStyle": "dark"
   },
   "tabBar": {
     "selectedColor": "#1b9adc",
     "color": "#666",
     "backgroundColor": "",
-    "borderStyle":"black",
+    "borderStyle": "black",
     "position": "bottom",
     "list": [
       {
-        "text": "首页",
+        "text": "成都",
         "pagePath": "pages/index/index",
-        "iconPath": "/assets/shouye.png",
-        "selectedIconPath": "/assets/shouyeT.png"
+        "iconPath": "/assets/icons/chengdu1.png",
+        "selectedIconPath": "/assets/icons/chengdu2.png"
       },
       {
-        "text": "分类",
-        "pagePath": "pages/cate/index",
-        "iconPath": "/assets/fenlei.png",
-        "selectedIconPath": "/assets/fenleiT.png"
+        "text": "九寨沟",
+        "pagePath": "pages/jzg/index",
+        "iconPath": "/assets/icons/hubo1.png",
+        "selectedIconPath": "/assets/icons/hubo2.png"
       },
       {
-        "text": "购物车",
-        "pagePath": "pages/cart/index",
-        "iconPath": "/assets/gouwuche.png",
-        "selectedIconPath": "/assets/gouwucheT.png"
+        "text": "黄龙",
+        "pagePath": "pages/hl/index",
+        "iconPath": "/assets/icons/senlinheliu.png",
+        "selectedIconPath": "/assets/icons/senlinheliu2.png"
       },
       {
-        "text": "我的",
-        "pagePath": "pages/profile/index",
-        "iconPath": "/assets/wode.png",
-        "selectedIconPath": "/assets/wodeT.png"
+        "text": "熊猫",
+        "pagePath": "pages/padan/index",
+        "iconPath": "/assets/icons/padan1.png",
+        "selectedIconPath": "/assets/icons/padan2.png"
       }
     ]
   },

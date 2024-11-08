@@ -2,6 +2,7 @@
   "usingComponents": {
     "navigation-bar": "/components/navigation-bar/navigation-bar"
   },
-  "navigationBarTitleText": "首页",
-  "navigationBarBackgroundColor": "#1b9adc"
+  "navigationBarTitleText": "成都",
+  "navigationBarBackgroundColor": "#1b9adc",
+  "enablePullDownRefresh": false
 }

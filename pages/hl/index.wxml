@@ -1,0 +1,4 @@
+<!--pages/cart/index.wxml-->
+<!-- view 类似于div -->
+<!-- 微信小程序规定，750rpx会占据width的100% -->
+<view class="container">袁代事</view>
