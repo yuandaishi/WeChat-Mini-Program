@@ -30,6 +30,15 @@ page {
   padding: 15rpx;
   font-size: 24rpx;
   background-color: #ffffff;
+
+  .text-box {
+    display: flex;
+    align-items: center;
+
+    .text {
+      margin-left: 10rpx;
+    }
+  }
 }
 
 .nav {
@@ -55,6 +64,26 @@ page {
 
     text {
       margin-top: 10rpx;
+    }
+  }
+}
+
+.scenery-hot {
+  display: flex;
+
+  .list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15rpx;
+
+    image {
+      width: 350rpx;
+    }
+
+    text {
+      margin-top: 15rpx;
+      font-size: 22rpx;
     }
   }
 }

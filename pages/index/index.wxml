@@ -16,21 +16,17 @@
 </view>
 <!-- 信息 -->
 <view class="info">
-  <text>游玩攻略</text>
-  <text>图片欣赏</text>
-  <text>视频欣赏</text>
-  <text>大好河山</text>
+  <view class="text-box"><text class="iconfont icon-youwan"></text><text class="text">游玩攻略</text></view>
+  <view class="text-box"><text class="iconfont icon-tupian"></text><text class="text">图片欣赏</text></view>
+  <view class="text-box"><text class="iconfont icon-shipin"></text><text class="text">视频欣赏</text></view>
+  <view class="text-box"><text class="iconfont icon-travel-tourism_mount"></text><text class="text">大好河山</text></view>
 </view>
 <!-- 导航 -->
-<scroll-view class="nav" scroll-x enable-flex>
-  <navigator url="/pages/list/list" class="list">
-    <image src="/assets/icons/liebiao.png" mode="scaleToFill" />
-    <text>列表</text>
-  </navigator>
-  <view class="list">
+<view class="nav">
+  <navigator url="/pages/announcement/index" class="list">
     <image src="/assets/icons/list-5.png" mode="scaleToFill" />
     <text>公告</text>
-  </view>
+  </navigator>
   <view class="list">
     <image src="/assets/icons/list-4.png" mode="scaleToFill" />
     <text>预约购票</text>
@@ -47,6 +43,27 @@
     <image src="/assets/icons/list-1.png" mode="scaleToFill" />
     <text>地图导览</text>
   </view>
-</scroll-view>
+</view>
 <!-- 推荐 -->
-<view class="goot-hot"></view>
+<scroll-view class="scenery-hot" scroll-x enable-flex>
+  <view class="list">
+    <image src="/assets/images/changhai.png" mode="widthFix" lazy-load />
+    <text>长海</text>
+  </view>
+  <view class="list">
+    <image src="/assets/images/shuzhengqun.png" mode="widthFix" lazy-load />
+    <text>树正群海</text>
+  </view>
+  <view class="list">
+    <image src="/assets/images/wucaichi.png" mode="widthFix" lazy-load />
+    <text>五彩池</text>
+  </view>
+  <view class="list">
+    <image src="/assets/images/wuhuahai.png" mode="widthFix" lazy-load />
+    <text>五花海</text>
+  </view>
+  <view class="list">
+    <image src="/assets/images/xianchi.png" mode="widthFix" lazy-load />
+    <text>仙池</text>
+  </view>
+</scroll-view>

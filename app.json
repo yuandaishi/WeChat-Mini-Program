@@ -5,7 +5,8 @@
     "pages/hl/index",
     "pages/jzg/index",
     "pages/padan/index",
-    "pages/list/list"
+    "pages/list/list",
+    "pages/announcement/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
