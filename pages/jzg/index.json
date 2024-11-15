@@ -1,9 +1,0 @@
-{
-  "usingComponents": {},
-  "navigationBarTextStyle": "white",
-  "navigationBarTitleText": "九寨沟",
-  "navigationBarBackgroundColor": "#00af92",
-  "enablePullDownRefresh": true,
-  "?backgroundColor": "#bababa",
-  "backgroundTextStyle": "light"
-}

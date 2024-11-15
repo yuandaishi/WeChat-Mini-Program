@@ -1,0 +1,13 @@
+/**app.wxss**/
+@import "./iconfont/iconfont.scss";
+
+// 通用样式
+.wx-checkbox-input {
+  width: 24rpx !important;
+  height: 24rpx !important;
+  border-radius: 50% !important;
+  border: 1px solid #fda007 !important;
+}
+wx-checkbox .wx-checkbox-input.wx-checkbox-input-checked:before {
+  font-size: 24rpx;
+}

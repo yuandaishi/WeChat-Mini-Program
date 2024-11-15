@@ -1,0 +1,5 @@
+<!--components/custom01/custom01.wxml-->
+<view>{{label}}</view>
+<view>{{name}}</view>
+<view>{{obj.name}}</view>
+<button bind:tap="updateName" plain>更新数据</button>
