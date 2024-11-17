@@ -1,8 +1,20 @@
 /* pages/profile/index.wxss */
-
-.van-image__img {
-  border-radius: 50%;
+.box {
+  text-align: center;
+  .btn {
+    display: inline-block;
+    font-size: 0;
+    padding: 0;
+    background-color: #ffffff;
+    // border: none;
+    border-radius: 50%;
+  }
+  .van-image__img {
+    border-radius: 50%;
+  }
+  .input {
+    border: 1px solid #179c16;
+    margin: 10rpx 30rpx;
+    border-radius: 10rpx;
+  }
 }
-// .image-class {
-//   border-radius: 50%;
-// }

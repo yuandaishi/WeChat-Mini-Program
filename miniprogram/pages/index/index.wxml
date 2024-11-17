@@ -23,7 +23,7 @@
 </view>
 <!-- 导航 -->
 <view class="nav">
-  <navigator url="/pages/announcement/index" class="list">
+  <navigator url="/modules/goodModule/pages/announcement/index" class="list">
     <image src="/assets/icons/list-5.png" mode="scaleToFill" />
     <text>公告</text>
   </navigator>

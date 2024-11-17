@@ -1,4 +1,4 @@
-// pages/list/list.js
+// modules/goodModule/pages/list/list.js
 Page({
 
   /**

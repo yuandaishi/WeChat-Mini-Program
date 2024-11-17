@@ -2,16 +2,15 @@
   "usingComponents": {
     "custom-checkbox": "/components/custom-checkbox/custom-checkbox",
     "custom01": "/components/custom01/custom01",
-    "van-image": "@vant/weapp/image/index"
+    "van-image": "@vant/weapp/image/index",
+    "van-button": "@vant/weapp/button/index"
   },
   "entryPagePath": "pages/index/index",
   "pages": [
     "pages/index/index",
     "pages/hl/index",
     "pages/jzg/index",
-    "pages/padan/index",
-    "pages/list/list",
-    "pages/announcement/index"
+    "pages/padan/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -55,7 +54,7 @@
       }
     ]
   },
-  "?style": "v2",
+  "style": "v2",
   "?renderer": "skyline",
   "?rendererOptions": {
     "skyline": {
@@ -69,5 +68,15 @@
   },
   "?componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "lazyCodeLoading": "requiredComponents",
+  "subPackages": [
+    {
+      "root": "modules/goodModule",
+      "name": "goodModule",
+      "pages": [
+        "pages/list/list",
+        "pages/announcement/index"
+      ]
+    }
+  ]
 }

@@ -4,5 +4,6 @@
   },
   "navigationBarTitleText": "成都",
   "navigationBarBackgroundColor": "#1b9adc",
-  "enablePullDownRefresh": false
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom"
 }
