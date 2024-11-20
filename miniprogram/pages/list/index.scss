@@ -1,0 +1,33 @@
+/* pages/list/index.wxss */
+.cocktails-list {
+  .title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 40rpx;
+    margin: 20rpx;
+  }
+  .loading-box {
+    margin-top: 100rpx;
+    text-align: center;
+  }
+  .cocktails-list-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15rpx;
+    .cocktails-list-item {
+      display: flex;
+      flex-direction: column;
+      width: calc(50% - 21rpx);
+      border: 1px solid;
+      margin-bottom: 15rpx;
+      &:nth-child(2n + 1) {
+        margin-right: 30rpx;
+      }
+    }
+  }
+  .load-all {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 20rpx;
+  }
+}

@@ -1,9 +1,10 @@
 {
   "usingComponents": {
-    "navigation-bar": "/components/navigation-bar/navigation-bar"
+    "good-card": "/components/good-card/index"
   },
-  "navigationBarTitleText": "成都",
+  "navigationBarTitleText": "首页",
   "navigationBarBackgroundColor": "#1b9adc",
   "enablePullDownRefresh": false,
+  "onReachBottomDistance": 100,
   "navigationStyle": "custom"
 }

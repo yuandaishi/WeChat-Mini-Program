@@ -1,4 +1,0 @@
-<!--pages/cate/index.wxml-->
-<scroll-view scroll-y class=".scroll-y" lower-threshold="100" bindscrolltolower="getMoreData" enable-back-to-top refresher-enabled refresher-default-style="black" bindrefresherrefresh="refresh" refresher-triggered="{{triggered}}">
-  <view wx:for="{{list}}" wx:key="key" class="view-list">{{item}}</view>
-</scroll-view>

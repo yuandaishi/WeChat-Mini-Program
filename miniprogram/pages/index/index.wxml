@@ -1,69 +1,37 @@
 <!--index.wxml-->
 <!-- 轮播图 -->
 <view class="swiper">
-  <swiper autoplay interval="2000" indicator-dots indicator-color="#fff" indicator-active-color="#1b9adc" circular>
+  <swiper autoplay interval="2000" indicator-color="#fff" indicator-active-color="#1b9adc" circular bindchange="swiperCurrentChange">
     <!-- autoplay：轮播图自动播放; interval:自动播放时长  indicator-dots:轮播图滚动点 indicator-color：indicator-dots颜色-->
-    <swiper-item>
-      <image src="/assets/images/2.png" mode="widthFix" lazy-load show-menu-by-longpress />
-    </swiper-item>
-    <swiper-item>
-      <image src="/assets/images/3.png" mode="widthFix" lazy-load show-menu-by-longpress />
-    </swiper-item>
-    <swiper-item>
-      <image src="/assets/images/4.png" mode="widthFix" lazy-load show-menu-by-longpress />
+    <swiper-item wx:for="{{swiperList}}" wx:key="id">
+      <image src="{{item.src}}" mode="widthFix" lazy-load show-menu-by-longpress bind:tap="toDetail" mark:item="{{item}}" />
     </swiper-item>
   </swiper>
-</view>
-<!-- 信息 -->
-<view class="info">
-  <view class="text-box"><text class="iconfont icon-youwan"></text><text class="text">游玩攻略</text></view>
-  <view class="text-box"><text class="iconfont icon-tupian"></text><text class="text">图片欣赏</text></view>
-  <view class="text-box"><text class="iconfont icon-shipin"></text><text class="text">视频欣赏</text></view>
-  <view class="text-box"><text class="iconfont icon-travel-tourism_mount"></text><text class="text">大好河山</text></view>
+  <!-- 轮播图的面板指示点，因为面板指示点不支持，所以我们只能通过自定义结构的方式 -->
+  <view class="indicator">
+    <!-- active 类名：当前被激活的面板指示点颜色 -->
+    <!-- rectangle 类名：默认的面板指示点颜色 -->
+    <text wx:for="{{swiperList}}" wx:key="id" class="{{ item.current===swiperCurrent?'active rectangle':'rectangle' }}">
+    </text>
+  </view>
 </view>
 <!-- 导航 -->
 <view class="nav">
-  <navigator url="/modules/goodModule/pages/announcement/index" class="list">
-    <image src="/assets/icons/list-5.png" mode="scaleToFill" />
-    <text>公告</text>
-  </navigator>
-  <view class="list">
-    <image src="/assets/icons/list-4.png" mode="scaleToFill" />
-    <text>预约购票</text>
-  </view>
-  <view class="list">
-    <image src="/assets/icons/list-2.png" mode="scaleToFill" />
-    <text>景点介绍</text>
-  </view>
-  <view class="list">
-    <image src="/assets/icons/list-3.png" mode="scaleToFill" />
-    <text>观光车</text>
-  </view>
-  <view class="list">
-    <image src="/assets/icons/list-1.png" mode="scaleToFill" />
-    <text>地图导览</text>
+  <view class="list" wx:for="{{IngredientsList}}" wx:key="id">
+    <image src="{{item.src}}" mode="widthFix" show-menu-by-longpress bind:tap="toCate" mark:item="{{item}}" />
+    <text>{{item.name}}</text>
   </view>
 </view>
 <!-- 推荐 -->
-<scroll-view class="scenery-hot" scroll-x enable-flex>
-  <view class="list">
-    <image src="/assets/images/changhai.png" mode="widthFix" lazy-load />
-    <text>长海</text>
+<view class="cocktails-list">
+  <view class="title">随机推荐</view>
+  <view wx:if="{{gettingData}}" class="loading-box">
+    <van-loading />
   </view>
-  <view class="list">
-    <image src="/assets/images/shuzhengqun.png" mode="widthFix" lazy-load />
-    <text>树正群海</text>
+  <view wx:else class="cocktails-list-box">
+    <good-card goodItem="{{item}}" wx:for="{{drinksCurrent}}" wx:key="idDrink" class="cocktails-list-item"></good-card>
   </view>
-  <view class="list">
-    <image src="/assets/images/wucaichi.png" mode="widthFix" lazy-load />
-    <text>五彩池</text>
+  <view wx:if="{{drinksCurrent.length >= drinksTotal.length}}" class="load-all">
+    没有更多啦~
   </view>
-  <view class="list">
-    <image src="/assets/images/wuhuahai.png" mode="widthFix" lazy-load />
-    <text>五花海</text>
-  </view>
-  <view class="list">
-    <image src="/assets/images/xianchi.png" mode="widthFix" lazy-load />
-    <text>仙池</text>
-  </view>
-</scroll-view>
+</view>

@@ -1,88 +1,101 @@
 /**index.wxss**/
 page {
   height: 100vh;
-  background-color: #efefef;
   display: flex;
   flex-direction: column;
-}
+  background-color: #230312;
+  color: #a78d9b;
+  .swiper {
+    position: relative;
+    swiper {
+      height: 220px;
 
-.scrollarea {
-  flex: 1;
-  overflow-y: hidden;
-}
+      image {
+        width: 100%;
+        // height: 240px;
+      }
+    }
 
-.swiper {
-  swiper {
-    height: 220px;
+    .indicator {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 16rpx;
 
-    image {
-      width: 100%;
-      // height: 240px;
+      // 面板指示器
+      .rectangle {
+        width: 30rpx;
+        height: 8rpx;
+        margin: 0 8rpx;
+        border-radius: 6rpx;
+        background-color: rgba(233, 228, 228, 0.9);
+      }
+
+      // 轮播图被激活时的样式
+      .active {
+        background-color: #ff7324;
+        width: 40rpx;
+      }
     }
   }
-}
-
-.info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 15rpx;
-  font-size: 24rpx;
-  background-color: #ffffff;
-
-  .text-box {
+  .nav {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 
-    .text {
-      margin-left: 10rpx;
+    .list {
+      padding: 15rpx;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      image {
+        background-color: #ff7324;
+        padding: 10rpx;
+        border-radius: 20rpx;
+        width: 140rpx;
+      }
+
+      text {
+        margin-top: 10rpx;
+        font-size: 24rpx;
+        color: #ffa700;
+      }
     }
   }
-}
-
-.nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-
-  .list {
-    padding: 15rpx;
-    display: flex;
-    flex-direction: column;
-    font-size: 24rpx;
-    align-items: center;
-
-    image {
-      background-color: #ffffff;
-      padding: 10rpx;
-      border-radius: 20rpx;
-      width: 100rpx;
-      height: 80rpx;
+  .cocktails-list {
+    .title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 40rpx;
+      margin: 20rpx;
     }
-
-    text {
-      margin-top: 10rpx;
+    .loading-box {
+      margin-top: 100rpx;
+      text-align: center;
     }
-  }
-}
-
-.scenery-hot {
-  display: flex;
-
-  .list {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 15rpx;
-
-    image {
-      width: 350rpx;
+    .cocktails-list-box {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 15rpx;
+      .cocktails-list-item {
+        display: flex;
+        flex-direction: column;
+        width: calc(50% - 21rpx);
+        border: 1px solid;
+        margin-bottom: 15rpx;
+        &:nth-child(2n + 1) {
+          margin-right: 30rpx;
+        }
+      }
     }
-
-    text {
-      margin-top: 15rpx;
-      font-size: 22rpx;
+    .load-all {
+      text-align: center;
+      font-size: 12px;
+      margin-bottom: 20rpx;
     }
   }
 }

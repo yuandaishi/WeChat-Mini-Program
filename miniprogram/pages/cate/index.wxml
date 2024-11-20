@@ -1,0 +1,14 @@
+<!--pages/cate/index.wxml-->
+<view>
+  <!-- scroll-with-animation 元素不能有padding,margin。否则滚动位置会有问题，高度也不能改变 -->
+  <scroll-view class="left-box" scroll-y scroll-into-view="{{currentId}}" enable-passive scroll-with-animation>
+    <view wx:for="{{IngredientsList}}" wx:key="id" id="{{item.id}}" bind:tap="selectActive" mark:item="{{item}}" class="{{item.active?'left-item active':'left-item'}}">
+      <image src="{{item.src}}" mode="heightFix" hidden="{{!item.active}}" class="img" />
+      <view class="left-border" hidden="{{!item.active}}"></view>
+      <text class="name">{{item.surname}}</text>
+    </view>
+    <!-- 解决margin-bottom不生效问题 -->
+    <view class="bottom"></view>
+  </scroll-view>
+</view>
+<view class="right-box"></view>

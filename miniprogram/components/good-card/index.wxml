@@ -1,0 +1,19 @@
+<!--components/good-card/index.wxml-->
+<block>
+  <image src="{{goodItem.strDrinkThumb}}" mode="widthFix" bind:tap="toDetail" mark:item="{{goodItem}}" class="img" />
+  <text class="name">{{goodItem.strDrink}}</text>
+  <text class="description">{{goodItem.strInstructions}}</text>
+  <!-- 价格区域 -->
+  <view class="goods_item_info_bottom">
+    <view class="goods_item_info_price">
+      <text class="text">¥</text>{{goodItem.price}}
+    </view>
+    <view class="goods_item_info_origin_price">
+      <text class="text">¥</text>{{goodItem.price-50}}
+    </view>
+    <!-- 加入购物车图片 -->
+    <view class="goods_item_info_btn">
+      <image class="goods_image" src="/assets/images/buybtn.png" mode="" />
+    </view>
+  </view>
+</block>

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "good-card": "/components/good-card/index"
+  },
+  "?navigationBarBackgroundColor": "#230312",
+  "enablePullDownRefresh": false,
+  "onReachBottomDistance": 100
+}

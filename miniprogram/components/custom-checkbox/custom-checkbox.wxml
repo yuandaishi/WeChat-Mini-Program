@@ -1,7 +1,0 @@
-<!--components/custom-checkbox/custom-checkbox.wxml-->
-<view>
-  <text>{{num}}</text>
-  <text>{{label}}</text>
-  <button bind:tap="updateData">更新数据</button>
-  <button bind:tap="updateLabel">更新label</button>
-</view>

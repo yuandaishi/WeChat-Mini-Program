@@ -1,0 +1,4 @@
+<!--pages/user/index.wxml-->
+<van-button bind:tap="request">请求成功</van-button>
+<van-button>请求失败</van-button>
+<van-button>请求默认</van-button>
